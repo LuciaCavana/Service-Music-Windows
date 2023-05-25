@@ -38,11 +38,8 @@ pip install pygame
 
 Configuremos bien el script
 ```
-1- entra al archivo que diga App2.py
-2- anda a la linea numero 12 la cual tiene lo siguiente
-    self.music_folder = 'C:/PycharmProject/MusicServer/MusicProject'
-Cambia la ruta por la ruta donde tengas la musica que queres reproducir
-no te olvides de cambiar \ por /.
+Ya no necesitas modificar el script.
+pero recordar que la musica a reproducir debe estar guardada en la carpeta que se llama MusicProject
 ```
 
 Creamos un servicio NSSM
