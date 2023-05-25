@@ -1,7 +1,8 @@
 # Service-Music-Windows
 Generate new Service with reproduction music automatic
 
-```Instalamos Python en windows
+Instalamos Python en windows
+```
 Instalemos cosas necesarias para ejecutarlo
 primero tenemos que saber que es un script escrito en python
 por lo tanto vas a necesitar seguir los siguientes pasos
@@ -29,11 +30,14 @@ Después de instalar Python, puedes abrir una ventana de símbolo del sistema (C
 Recuerda que los pasos pueden variar ligeramente según el sistema operativo que estés utilizando, pero en general, el proceso de instalación es similar.
 ```
 
-```Instalamos Dependencias
+Instalamos Dependencias
+```
 pip install flask 
 pip install pygame 
 ```
-```Configuremos bien el script
+
+Configuremos bien el script
+```
 1- entra al archivo que diga App2.py
 2- anda a la linea numero 12 la cual tiene lo siguiente
     self.music_folder = 'C:/PycharmProject/MusicServer/MusicProject'
@@ -41,7 +45,8 @@ Cambia la ruta por la ruta donde tengas la musica que queres reproducir
 no te olvides de cambiar \ por /.
 ```
 
-```Creamos un servicio NSSM
+Creamos un servicio NSSM
+```
 1- Descargamos el NSSM en la siguiente ruta https://nssm.cc/download (nssm 2.24.zip)
     1.1- Extraemos el contenido y lo guardamos en cualquier directorio (el que mas prefieras)
 2- abrimos CMD y vamos la ruta donde tenemos el .exe que necesitamos (dentro del zip tenemos NSSM.exe tanto para windows 32 como 64)
