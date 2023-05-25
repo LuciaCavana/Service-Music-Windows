@@ -62,8 +62,9 @@ nssm restart "Mi Servicio de musica"
 Acordate de estar en la ruta donde esta guardado el NSSM.exe (win32 o win64)
 ```
 
-```NSSM no inicia automáticamente los servicios al iniciar sesión o al encender el dispositivo. Sin embargo, puedes configurar NSSM para que el servicio se inicie automáticamente al iniciar sesión en Windows utilizando el Programador de tareas.
-
+NSSM no inicia automáticamente 
+```
+Sin embargo, puedes configurar NSSM para que el servicio se inicie automáticamente al iniciar sesión en Windows utilizando el Programador de tareas.
 Aquí hay algunos pasos para configurar NSSM y hacer que el servicio se inicie automáticamente al iniciar sesión:
 
 1. Abre el Programador de tareas de Windows. Puedes buscar "Programador de tareas" en el menú de inicio o abrirlo desde el Panel de control.
