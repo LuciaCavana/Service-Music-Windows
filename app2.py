@@ -5,11 +5,13 @@ import os
 mixer.init()
 app = Flask(__name__)
 
+direct_actual = os.path.dirname(__file__)
+
 
 class App:
     def __init__(self):
         mixer.init()
-        self.music_folder = 'C:/PycharmProject/MusicServer/MusicProject'
+        self.music_folder =os.path.join(direct_actual, "MusicProject")
         self.play_music()
 
     def play_music(self):
@@ -34,6 +36,11 @@ def play_music():
 @app.route('/stop')
 def stop_music():
     return my_app.stop_music()
+
+@app.route('/')
+def home():
+    stop_music()
+    return 'Musica detenida'
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=8080)
